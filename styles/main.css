@@ -1,0 +1,39 @@
+body {
+    background-color: lavender;
+    font-family: 'Sorts Mill Goudy', serif;
+
+}
+
+
+#fishTank {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1em;
+    border: 5px dashed red;
+}
+
+.fishList {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    /* margin: 1em; */
+}
+
+.fishList-card {
+    background-color: lightblue;
+    margin: 1em;
+    flex-basis: 25%;
+    padding: 0em 1em;
+}
+
+.card-image {
+}
+
+.fishCard-image {
+    width: 100%;
+    height: auto;
+}
+aside{
+    flex: 1;
+}
+
