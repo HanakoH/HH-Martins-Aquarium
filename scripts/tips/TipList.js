@@ -12,8 +12,14 @@ export const TipList = () => {
     const contentElement = document.querySelector(".martinsTips")
     const theTips = useTips()
 
+    let tipHTMLRep = "";
+
+    for (const tip of theTips) {
+        tipHTMLRep += Tip(tip);
+    }
+
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
-            "All the tips go here!"
+           ${tipHTMLRep}
     `
 }
